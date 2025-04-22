@@ -1,6 +1,6 @@
 function Home() {
   return (
-    <section className="flex flex-col-reverse lg:flex-row items-center justify-center gap-4 px-10 md:px-28 py-5 bg-[#fdf5f8]">
+    <section className="flex flex-col-reverse lg:flex-row items-center justify-center gap-10 px-10 md:px-28 py-5 bg-[#fdf5f8]">
       {/* Left Text Block */}
       <div className="max-w-3xl space-y-6">
         <div className="flex gap-2 bg-[#1D8DB240] w-5/12 px-1 py-1 rounded-full">

@@ -1,10 +1,10 @@
 function Header() {
   return (
-    <header className="flex items-center justify-between px-5 py-3 md:px-20">
+    <header className="flex items-center justify-around pt-4 pb-3 ">
       <img
         src="/vizzle_logo.png"
         alt="vizzle_logo"
-        className="w-32 sm:w-40 h-auto"
+        className="w-32 sm:w-44 h-auto"
       />
       <input
         type="text"
