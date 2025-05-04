@@ -1,11 +1,19 @@
+import About from "./About";
+import Footer from "./Footer";
 import Header from "./Header";
-import Home from "./Home";
+import HomePage from "./HomePage";
+import LaunchingPage from "./LaunchingPage";
+import Newsletter from "./Newsletter";
 
 function AppLayout() {
   return (
     <>
       <Header />
-      <Home />
+      <HomePage />
+      <About />
+      <LaunchingPage />
+      <Newsletter />
+      <Footer />
     </>
   );
 }
