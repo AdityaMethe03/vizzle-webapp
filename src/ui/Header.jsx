@@ -33,7 +33,7 @@ function Header() {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         ></i>
         <div
-          className={`absolute xl:hidden top-32 py-6 px-8 left-0 w-full bg-[#F9F3FA] bg-opacity-95 flex flex-col items-start gap-6 font-semibold text-lg transform transition-transform ${
+          className={`absolute xl:hidden top-32 pb-6 px-8 left-0 w-full bg-[#F9F3FA] bg-opacity-95 flex flex-col items-start gap-6 font-semibold text-lg  drop-shadow-md transform transition-transform ${
             isMenuOpen
               ? "opacity-100 scale-100"
               : "opacity-0 scale-95 pointer-events-none"
