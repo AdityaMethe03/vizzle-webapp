@@ -18,7 +18,7 @@ function Header() {
           <input
             type="text"
             placeholder="Search..."
-            className="py-2 px-10 rounded-full outline-none focus:ring focus:ring-stone-200 focus:ring-opacity-50 transition-all duration-300"
+            className="py-2 pl-12 pr-40 rounded-full outline-none focus:ring focus:ring-stone-200 focus:ring-opacity-50 transition-all duration-300"
           />
         </div>
 
@@ -42,11 +42,11 @@ function Header() {
         >
           {/* Now visible on mobile */}
           <div className="relative flex items-center justify-center gap-3">
-            <i className="bx bx-search absolute left-3 text-lg md:text-2xl text-gray-500"></i>
+            <i className="bx bx-search absolute left-3 text-base md:text-2xl text-gray-500"></i>
             <input
               type="text"
               placeholder="Search..."
-              className="py-2 px-10 rounded-full outline-none focus:ring focus:ring-stone-200 focus:ring-opacity-50 transition-all duration-300"
+              className="text-base pl-10 py-2 rounded-full outline-none focus:ring focus:ring-stone-200 focus:ring-opacity-50 transition-all duration-300"
             />
           </div>
 
