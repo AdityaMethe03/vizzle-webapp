@@ -16,9 +16,24 @@ function Footer() {
 
         {/* Social Icons */}
         <div className="flex gap-6 md:gap-8 mt-4 md:mt-0">
-          <i className="bx bxl-facebook text-xl sm:text-2xl"></i>
-          <i className="bx bxl-twitter text-xl sm:text-2xl"></i>
-          <i className="bx bxl-youtube text-xl sm:text-2xl"></i>
+          <a
+            href="https://www.facebook.com/profile.php?id=61572449970623"
+            className="hover:text-blue-500 transition "
+          >
+            <i className="bx bxl-facebook text-xl sm:text-2xl"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/vizzle-official/"
+            className="hover:text-blue-500 transition"
+          >
+            <i className="bx bxl-linkedin text-xl sm:text-2xl"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/vizzle.in/profilecard/?igsh=MXBleDQ4OG51c2t6cg=="
+            className="hover:text-blue-500 transition"
+          >
+            <i className="bx bxl-instagram text-xl sm:text-2xl"></i>
+          </a>
         </div>
       </div>
 
