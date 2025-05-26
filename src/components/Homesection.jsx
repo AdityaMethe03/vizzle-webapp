@@ -8,7 +8,7 @@ function Homesection() {
 
   return (
     <section className="relative w-full overflow-hidden py-28 z-40 bg-[#F9F3FA]">
-      <div className="w-[40%] absolute bottom-5 right-0  transform animate-slideBikeInLeft z-50 sm:w-[25%]">
+      <div className="w-[40%] absolute bottom-5 right-0  transform animate-slideBikeInLeft z-50 sm:w-[20%]">
         <img src="vizzleBike.png" alt="Bike" />
       </div>
 
