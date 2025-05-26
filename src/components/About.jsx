@@ -4,8 +4,10 @@ function About() {
     <section className="w-full bg-[#68899475]">
       {/* BENEFITS  */}
       <div className="container mx-auto py-10 flex flex-col items-center">
-        <p className="text-6xl font-normal py-6">Benefits of joining Vizzle!</p>
-        <div className="flex flex-col items-center justify-evenly gap-8 my-10 sm:flex-row">
+        <p className="text-3xl font-normal py-6 sm:text-5xl lg:text-6xl text-center">
+          Benefits of joining Vizzle!
+        </p>
+        <div className="flex flex-col items-center justify-evenly gap-8 my-10 lg:flex-row">
           <div className="w-72 flex flex-col items-center justify-center px-4 py-8 gap-6 rounded-xl shadow-lg bg-white">
             <p className="text-lg font-semibold text-[#1D8DB2]">
               First in Line, First in Style
@@ -51,15 +53,17 @@ function About() {
         </div>
       </div>
       {/* ABOUT */}
-      <div className="container max-w-screen-lg mx-auto py-20 flex flex-row items-center justify-around gap-12">
+      <div className="container max-w-screen-lg mx-auto py-5 flex flex-col items-center justify-around gap-12 sm:py-20 sm:flex-row">
         <img
           src="about.png"
           alt="About Vizzle"
-          className="max-w-80 rounded-lg shadow-lg"
+          className="max-w-80 rounded-lg shadow-lg "
         />
         <div>
-          <h1 className="text-4xl font-medium mb-4">About Vizzle</h1>
-          <p className="tracking-wider leading-7 text-[#3A3A3A]">
+          <h1 className="text-4xl text-center font-medium mb-4 sm:text-left">
+            About Vizzle
+          </h1>
+          <p className="text-center px-4 pb-4 font-medium tracking-wider leading-7 text-[#3A3A3A] sm:px-0">
             Vizzle is a cutting-edge fashion technology startup that
             revolutionizes the way you experience style. By harnessing the power
             of augmented reality, Vizzle transforms your clothing choices into

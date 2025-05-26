@@ -1,11 +1,11 @@
-import { XMarkIcon } from "@heroicons/react/20/solid";
 import { useState } from "react";
+import WaitlistForm from "./WaitlistForm";
 
 function LaunchingPage() {
   const [isFormOpen, setIsFormOpen] = useState(false);
   return (
     <section>
-      <div className="container relative min-h-[80vh] mx-auto flex flex-col items-center justify-center gap-4 py-8 px-4 text-center overflow-hidden bg-white sm:min-h-[90vh] md:min-h-screen sm:gap-8 md:gap-12 sm:py-10 md:py-14">
+      <div className="container relative mx-auto flex flex-col items-center justify-center gap-4 py-8 px-4 text-center overflow-hidden bg-white h-screen sm:gap-8 md:gap-12 sm:py-10 md:py-14">
         <p className="font-sans font-medium text-5xl sm:text-6xl md:text-7xl leading-tight">
           Launching Soon
         </p>
@@ -24,17 +24,12 @@ function LaunchingPage() {
         <div
           className={`${
             isFormOpen
-              ? "absolute top-2/5 left-1/3 w-1/3 h-2/3 py-4 bg-opacity-95 rounded-xl shadow-lg transform transition-all duration-500 ease-in-out opacity-100 bg-white"
-              : "hidden transform transition-all duration-500 ease-in-out opacity-0"
+              ? "absolute top-5 w-[90%] h-2/3 sm:w-[50%] md:w-[40%] xl:w-[33%] xl:top-20"
+              : // "relative max-w-md w-full bg-[#fff7f3] rounded-xl shadow-xl p-6 mx-auto"
+                "hidden transform transition-all duration-500 ease-in-out opacity-0"
           } `}
         >
-          <XMarkIcon
-            className="absolute w-10 h-10 right-2 top-2"
-            onClick={() => setIsFormOpen(false)}
-          />
-          <div className="flex flex-row items-center justify-center">
-            <p>Join the Fashion!</p>
-          </div>
+          <WaitlistForm handleFormOpen={setIsFormOpen} />
         </div>
       </div>
     </section>

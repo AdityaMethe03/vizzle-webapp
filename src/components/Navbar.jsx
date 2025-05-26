@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   MagnifyingGlassIcon,
@@ -9,9 +9,28 @@ import {
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 640) {
+        // sm breakpoint in Tailwind (640px)
+        setIsMenuOpen(false);
+      }
+    };
+
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleResize);
+    }
+
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener("resize", handleResize);
+      }
+    };
+  }, []);
+
   return (
     // <header className="bg-[#F9F3FA] w-full fixed top-0 left-0 right-0 z-50 text-sm md:text-base lg:text-lg">
-    <header className="backdrop-blur-lg w-[95%] fixed top-2 left-1/2 transform -translate-x-1/2 z-50 text-sm md:text-base lg:text-lg rounded-3xl bg-[#F9F3FA]/80">
+    <header className="backdrop-blur-lg w-[100%] fixed top-0 left-1/2 transform -translate-x-1/2 z-50 text-sm rounded-none bg-[#F9F3FA] md:text-base lg:text-lg sm:w-[95%] sm:rounded-3xl sm:top-2 sm:bg-[#F9F3FA]/80">
       <nav className="container mx-auto flex items-center justify-between h-[6.5rem] px-4 gap-2 sm:px-1 2xl:px-16 md:gap-0 animate-slideContentInleft">
         <Link href="/">
           <img
@@ -57,7 +76,7 @@ function Navbar() {
         </div>
 
         <div
-          className={`absolute flex flex-col items-start w-full h-40 bg-[#F9F3FA] top-24 left-0 p-5 gap-5 bg-gray-50/97 z-40 transform transition-all duration-500 ease-in-out ${
+          className={`absolute flex flex-col items-start w-full h-40 backdrop-blur-3xl bg-[#F9F3FA] top-24 left-0 p-5 gap-5 bg-gray-50/97 z-40 transform transition-all duration-500 ease-in-out ${
             isMenuOpen
               ? "opacity-100 translate-x-0 pointer-events-auto"
               : "opacity-0 translate-x-full pointer-events-none"

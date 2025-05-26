@@ -7,14 +7,14 @@ function Footer() {
   return (
     <section>
       <div className="container max-w-screen-lg mx-auto my-12">
-        <div className="h-auto flex flex-row items-start justify-between">
+        <div className="h-auto flex flex-col items-start justify-between px-8 sm:flex-row sm:px-0">
           <div className="flex flex-col items-start justify-start gap-2">
             <p className="text-3xl font-semibold tracking-wide">Contact Us</p>
             <div className="flex flex-row items-center justify-start gap-2">
               <FaEnvelope className="text-lg sm:text-xl" />
               <p className="text-lg text-center">info@vizzle.in</p>
             </div>
-            <p>
+            <p className="font-baloo">
               We'd love to hear from you! <br /> Reach out with your queries or
               feedback.
             </p>
@@ -43,6 +43,9 @@ function Footer() {
             </div>
           </div>
         </div>
+        <p className="text-center pt-10 font-baloo text-slate-700">
+          © Copyright 2025 - Vizzle
+        </p>
       </div>
     </section>
   );
