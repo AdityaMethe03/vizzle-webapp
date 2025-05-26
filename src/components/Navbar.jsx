@@ -91,7 +91,7 @@ function Navbar() {
             />
           </div>
           <div className="sm:hidden flex">
-            <button className="p-4 rounded-full bg-[#1D8DB2] text-white text-sm shadow-md">
+            <button className="px-3 py-3 rounded-full bg-[#1D8DB2] text-white text-xs shadow-md">
               Download Now
             </button>
           </div>

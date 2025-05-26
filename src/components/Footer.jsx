@@ -23,7 +23,7 @@ function Footer() {
             <p className="text-2xl">Get in touch...</p>
             <div className="flex flex-row items-start justify-start gap-2">
               <a
-                href="https://www.facebook.com/profile.php?id=61572449970623"
+                href="https://www.instagram.com/vizzle.in/profilecard/?igsh=MXBleDQ4OG51c2t6cg=="
                 className="transition hover:text-blue-500"
               >
                 <FaInstagram className="w-10 h-10 text-xl sm:text-2xl" />
@@ -34,17 +34,14 @@ function Footer() {
               >
                 <FaLinkedin className="w-10 h-10 text-xl sm:text-2xl" />
               </a>
-              <a
-                href="https://www.instagram.com/vizzle.in/profilecard/?igsh=MXBleDQ4OG51c2t6cg=="
-                className="transition hover:text-blue-500"
-              >
+              <a href="" className="transition hover:text-blue-500">
                 <FaXTwitter className="w-10 h-10 text-xl sm:text-2xl" />
               </a>
             </div>
           </div>
         </div>
         <p className="text-center pt-10 font-baloo text-slate-700">
-          © Copyright 2025 - Vizzle
+          Copyright © 2024 Vizzle - All Rights Reserved.
         </p>
       </div>
     </section>
