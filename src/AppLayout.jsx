@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import Homesection from "./components/Homesection";
 import LaunchingPage from "./components/LaunchingPage";
 import Navbar from "./components/Navbar";
-import Newsletter from "./components/Newsletter";
+import Faq from "./components/Faq";
 
 function AppLayout() {
   return (
@@ -12,7 +12,7 @@ function AppLayout() {
       <Homesection />
       <About />
       <LaunchingPage />
-      <Newsletter />
+      <Faq />
       <Footer />
     </div>
   );

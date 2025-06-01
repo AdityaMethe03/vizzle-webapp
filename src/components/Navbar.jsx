@@ -1,10 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  MagnifyingGlassIcon,
-  Bars3Icon,
-  XMarkIcon,
-} from "@heroicons/react/20/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,16 +36,8 @@ function Navbar() {
             placeholder="blur"
           />
         </Link>
-        <div className="relative hidden sm:flex items-center justify-center">
-          <MagnifyingGlassIcon className="w-5 h-5 text-gray-500 absolute left-4 top-1/2 -translate-y-1/2" />
-          <input
-            type="text"
-            placeholder="Search..."
-            className="py-2 pl-12 pr-14 rounded-full outline-none focus:ring focus:ring-stone-200 focus:ring-opacity-50 transition-all duration-300 md:pr-20 lg:pr-40"
-          />
-        </div>
         <div className="hidden sm:flex ">
-          <button className="px-3 py-3 rounded-full bg-[#1D8DB2] text-white text-sm shadow-md hover:shadow-inner md:px-5 md:py-4">
+          <button className="px-5 py-4 rounded-full bg-[#1D8DB2] text-white text-sm shadow-md hover:shadow-inner md:px-7 md:py-5">
             Download Now
           </button>
         </div>
@@ -76,20 +64,12 @@ function Navbar() {
         </div>
 
         <div
-          className={`absolute flex flex-col items-start w-full h-40 backdrop-blur-3xl bg-[#F9F3FA] top-24 left-0 p-5 gap-5 bg-gray-50/97 z-40 transform transition-all duration-500 ease-in-out ${
+          className={`absolute flex flex-col items-start w-full h-20 backdrop-blur-3xl bg-[#F9F3FA] top-24 left-0 p-5 gap-5 bg-gray-50/97 z-40 transform transition-all duration-500 ease-in-out ${
             isMenuOpen
               ? "opacity-100 translate-x-0 pointer-events-auto"
               : "opacity-0 translate-x-full pointer-events-none"
           }`}
         >
-          <div className="relative sm:hidden flex items-center justify-center">
-            <MagnifyingGlassIcon className="w-5 h-5 text-gray-500 absolute left-4 top-1/2 -translate-y-1/2" />
-            <input
-              type="text"
-              placeholder="Search..."
-              className="py-2 pl-12 pr-14 rounded-full outline-none focus:ring focus:ring-stone-200 focus:ring-opacity-50 transition-all duration-300 md:pr-20 lg:pr-40"
-            />
-          </div>
           <div className="sm:hidden flex">
             <button className="px-3 py-3 rounded-full bg-[#1D8DB2] text-white text-xs shadow-md">
               Download Now

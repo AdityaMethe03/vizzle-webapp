@@ -8,11 +8,7 @@ function Homesection() {
 
   return (
     <section className="relative w-full overflow-hidden py-28 z-40 bg-[#F9F3FA]">
-      <div className="w-[40%] absolute bottom-5 right-0  transform animate-slideBikeInLeft z-50 sm:w-[20%]">
-        <img src="vizzleBike.png" alt="Bike" />
-      </div>
-
-      <div className="container mx-auto my-3 px-1 flex flex-col items-center justify-evenly gap-6 transform animate-slideContentInleft sm:flex-row sm:gap-0 sm:my-6">
+      <div className="container mx-auto my-8 px-1 flex flex-col items-center justify-evenly gap-6 transform animate-slideContentInleft sm:flex-row sm:gap-0 sm:my-4">
         <div className="max-w-2xl flex flex-col items-center sm:items-start ">
           <div className="hidden flex-wrap justify-start max-w-fit px-1 py-1 text-xs shadow-inner rounded-full bg-[#1D8DB2] sm:flex">
             <button className="px-3 py-2 rounded-full shadow-lg bg-white sm:px-4 sm:py-2">
@@ -37,8 +33,12 @@ function Homesection() {
             </button>
           </div>
         </div>
-        <div className="w-[17.5rem] md:w-[30rem] h-auto">
-          <img src="vizzleVisuals.png" alt="vizzleVisuals" />
+        <div className="w-[25rem] md:w-[35rem] h-auto">
+          <img
+            src="vizzleVisuals.png"
+            alt="vizzleVisuals"
+            className="w-full h-full"
+          />
         </div>
       </div>
     </section>
