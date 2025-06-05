@@ -9,7 +9,7 @@ function About() {
         </p>
         <div className="flex flex-wrap items-center justify-evenly gap-8 my-10 ">
           <div className="w-72 h-[350px] flex flex-col items-center justify-center px-4 py-8 gap-6 rounded-xl shadow-lg bg-white">
-            <p className="text-lg font-semibold text-[#1D8DB2]">
+            <p className="text-lg h-8 font-semibold text-[#1D8DB2]">
               Try Before You Buy
               <span className="text-base"> - In Real Life</span>
             </p>
@@ -23,7 +23,7 @@ function About() {
             </p>
           </div>
           <div className="w-72 h-[350px] flex flex-col items-center justify-center px-4 py-8 gap-6 rounded-xl shadow-lg bg-white">
-            <p className="text-lg font-semibold text-[#1D8DB2]">
+            <p className="text-lg h-8 font-semibold text-[#1D8DB2]">
               Shop Together, Smarter
             </p>
             <img
@@ -36,7 +36,7 @@ function About() {
             </p>
           </div>
           <div className="w-72 h-[350px] flex flex-col items-center justify-center px-4 py-8 gap-6 rounded-xl shadow-lg bg-white">
-            <p className="text-lg text-center font-semibold text-[#1D8DB2]">
+            <p className="text-lg h-8 text-center font-semibold text-[#1D8DB2]">
               Smarter Shopping, Greener Planet
             </p>
             <img
@@ -48,20 +48,6 @@ function About() {
               Shop smarter, waste less—Vizzle cuts returns and carbon footprint.
             </p>
           </div>
-          {/* <div className="w-72 flex flex-col items-center justify-center px-4 py-8 gap-6 rounded-xl shadow-lg bg-white">
-            <p className="text-lg font-semibold text-[#1D8DB2]">
-              First in Line, First in Style
-            </p>
-            <img
-              src="about3.png"
-              alt="Benefits_of_Vizzle"
-              className="w-1/2 rounded-full"
-            />
-            <p className="text-center text-lg font-semibold text-[#1D8DB2]">
-              Get exclusive early access to Ubbaco 60-minute fashion delivery
-              revolution.
-            </p>
-          </div> */}
         </div>
       </div>
       {/* ABOUT */}

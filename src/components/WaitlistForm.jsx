@@ -40,10 +40,8 @@ function WaitlistForm({ handleFormOpen }) {
       <h2 className="text-xl sm:text-2xl font-semibold text-center text-white mb-1">
         Join the Fashion <br /> <span className="font-bold">Revolution!</span>
       </h2>
-      <p className="text-center text-sm text-white mb-6">
-        Be a part of the revolution
-        <br />
-        fashion delivered in 60 minutes!
+      <p className="text-center text-base text-white mb-6">
+        Try AR outfits, shop smart, cut returns, go green with Vizzle.
       </p>
 
       <form ref={formRef} onSubmit={sendEmail} className="space-y-1">
