@@ -41,7 +41,9 @@ function Faq() {
                     : "grid-rows-[0fr] opacity-0"
                 }`}
               >
-                <div className="overflow-hidden px-4 pb-4">{faq.answer}</div>
+                <div className="overflow-hidden px-4 pb-4 bg-gray-50 ">
+                  {faq.answer}
+                </div>
               </div>
             </div>
           ))}

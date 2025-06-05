@@ -10,7 +10,8 @@ function About() {
         <div className="flex flex-wrap items-center justify-evenly gap-8 my-10 ">
           <div className="w-72 flex flex-col items-center justify-center px-4 py-8 gap-6 rounded-xl shadow-lg bg-white">
             <p className="text-lg font-semibold text-[#1D8DB2]">
-              First in Line, First in Style
+              Try Before You Buy
+              <span className="text-base"> - In Real Life</span>
             </p>
             <img
               src="about1.png"
@@ -18,13 +19,12 @@ function About() {
               className="w-1/2 rounded-full"
             />
             <p className="text-center text-lg font-semibold text-[#1D8DB2]">
-              Get exclusive early access to Ubbaco 60-minute fashion delivery
-              revolution.
+              Try on outfits in real-time with AR—shop confidently anywhere.
             </p>
           </div>
           <div className="w-72 flex flex-col items-center justify-center px-4 py-8 gap-6 rounded-xl shadow-lg bg-white">
             <p className="text-lg font-semibold text-[#1D8DB2]">
-              First in Line, First in Style
+              Shop Together, Smarter
             </p>
             <img
               src="about2.png"
@@ -32,11 +32,23 @@ function About() {
               className="w-1/2 rounded-full"
             />
             <p className="text-center text-lg font-semibold text-[#1D8DB2]">
-              Get exclusive early access to Ubbaco 60-minute fashion delivery
-              revolution.
+              Shop together via video calls—compare, decide, and gift with AR.
             </p>
           </div>
           <div className="w-72 flex flex-col items-center justify-center px-4 py-8 gap-6 rounded-xl shadow-lg bg-white">
+            <p className="text-base font-semibold text-[#1D8DB2]">
+              Smarter Shopping, Greener Planet
+            </p>
+            <img
+              src="about3.png"
+              alt="Benefits_of_Vizzle"
+              className="w-1/2 rounded-full"
+            />
+            <p className="text-center text-lg font-semibold text-[#1D8DB2]">
+              Shop smarter, waste less—Vizzle cuts returns and carbon footprint.
+            </p>
+          </div>
+          {/* <div className="w-72 flex flex-col items-center justify-center px-4 py-8 gap-6 rounded-xl shadow-lg bg-white">
             <p className="text-lg font-semibold text-[#1D8DB2]">
               First in Line, First in Style
             </p>
@@ -49,21 +61,7 @@ function About() {
               Get exclusive early access to Ubbaco 60-minute fashion delivery
               revolution.
             </p>
-          </div>
-          <div className="w-72 flex flex-col items-center justify-center px-4 py-8 gap-6 rounded-xl shadow-lg bg-white">
-            <p className="text-lg font-semibold text-[#1D8DB2]">
-              First in Line, First in Style
-            </p>
-            <img
-              src="about3.png"
-              alt="Benefits_of_Vizzle"
-              className="w-1/2 rounded-full"
-            />
-            <p className="text-center text-lg font-semibold text-[#1D8DB2]">
-              Get exclusive early access to Ubbaco 60-minute fashion delivery
-              revolution.
-            </p>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* ABOUT */}

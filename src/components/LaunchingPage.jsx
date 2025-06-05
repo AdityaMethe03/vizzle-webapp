@@ -1,8 +1,9 @@
-import { useState } from "react";
+/* eslint-disable react/prop-types */
+// import { useState } from "react";
 import WaitlistForm from "./WaitlistForm";
 
-function LaunchingPage() {
-  const [isFormOpen, setIsFormOpen] = useState(false);
+function LaunchingPage({ isFormOpen, setIsFormOpen }) {
+  // const [isFormOpen, setIsFormOpen] = useState(false);
   return (
     <section>
       <div className="container relative mx-auto flex flex-col items-center justify-center gap-4 py-8 px-4 text-center overflow-hidden bg-white h-screen sm:gap-8 md:gap-12 sm:py-10 md:py-14">

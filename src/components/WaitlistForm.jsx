@@ -1,7 +1,34 @@
 /* eslint-disable react/prop-types */
 import { XMarkIcon } from "@heroicons/react/20/solid";
+import emailjs from "emailjs-com";
+import { useRef } from "react";
 
 function WaitlistForm({ handleFormOpen }) {
+  const formRef = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_7hb1blc", // ✅ Replace with your EmailJS service ID
+        "template_c67pbwo", // ✅ Replace with your EmailJS template ID
+        formRef.current,
+        "XQT1wDVqgZOdacdtB" // ✅ Replace with your EmailJS public key (user_ or key_ prefix)
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Email sent to user successfully!");
+          handleFormOpen(false);
+        },
+        (error) => {
+          console.error(error.text);
+          alert("Error sending email.");
+        }
+      );
+  };
+
   return (
     <div className="relative w-100 bg-[#33B9E7] rounded-xl shadow-xl p-2 mx-auto sm:p-6">
       <button
@@ -18,19 +45,26 @@ function WaitlistForm({ handleFormOpen }) {
         <br />
         fashion delivered in 60 minutes!
       </p>
-      <form className="space-y-1">
+
+      <form ref={formRef} onSubmit={sendEmail} className="space-y-1">
         <div>
           <p className="text-start text-white">Name</p>
           <input
             type="text"
+            name="user_name"
             placeholder="XYZ..."
+            required
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1D8DB2]"
           />
         </div>
         <div>
           <p className="text-start text-white">Gender</p>
-          <select className="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-[#1D8DB2]">
-            <option>Select</option>
+          <select
+            name="gender"
+            required
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-[#1D8DB2]"
+          >
+            <option value="">Select</option>
             <option>Male</option>
             <option>Female</option>
           </select>
@@ -39,7 +73,9 @@ function WaitlistForm({ handleFormOpen }) {
           <p className="text-start text-white">Email</p>
           <input
             type="email"
+            name="user_email" // ✅ Must match your EmailJS template variable
             placeholder="xyz@gmail.com"
+            required
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1D8DB2]"
           />
         </div>
@@ -47,14 +83,16 @@ function WaitlistForm({ handleFormOpen }) {
           <p className="text-start text-white">Age</p>
           <input
             type="text"
+            name="age"
             placeholder="22"
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1D8DB2]"
           />
         </div>
         <div>
-          <p className="text-start text-white">Phone-number</p>
+          <p className="text-start text-white">Phone Number</p>
           <input
             type="text"
+            name="phone"
             placeholder="987xxx3210"
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1D8DB2]"
           />
@@ -62,7 +100,7 @@ function WaitlistForm({ handleFormOpen }) {
         <div className="pt-6">
           <button
             type="submit"
-            className="w-fit px-20 py-2 text-slate-700 text-lg rounded-full bg-gradient-to-r from-white to-gray-300 hover:from-gray-300 hover:to-white transition-colors duration-300"
+            className="w-fit px-20 py-2 text-white text-base rounded-full bg-gradient-to-r from-[#1D8DB2] to-[#0C3C4C] transition-colors duration-300"
           >
             Submit
           </button>

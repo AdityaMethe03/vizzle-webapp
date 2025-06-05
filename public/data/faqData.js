@@ -1,14 +1,14 @@
 export const faqs = [
   {
-    question: "Why Vizzle?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, tenetur dolorem? Sed ipsum sit iusto cumque! Dolorum numquam repellendus illo.Quo delectus magni non hic obcaecati ratione at nobis cumque.",
+    question: "What is Vizzle?",
+    answer: "Vizzle is an upcoming AR-powered fashion app that lets you virtually try on clothes and accessories in real-time, making online shopping more accurate and fun.",
   },
   {
-    question: "Why Vizzle?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, tenetur dolorem? Sed ipsum sit iusto cumque! Dolorum numquam repellendus illo.Quo delectus magni non hic obcaecati ratione at nobis cumque.",
+    question: "When will Vizzle be available?",
+    answer: "We’re launching soon! Sign up for early access to be among the first to experience Vizzle.",
   },
   {
-    question: "Why Vizzle?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, tenetur dolorem? Sed ipsum sit iusto cumque! Dolorum numquam repellendus illo.Quo delectus magni non hic obcaecati ratione at nobis cumque.",
+    question: "How does Vizzle work?",
+    answer: "Upload your photo or join a video call—Vizzle uses cutting-edge AR to help you see outfits on yourself or others before you buy.",
   },
 ];

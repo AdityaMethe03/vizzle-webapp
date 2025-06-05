@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 
@@ -27,6 +27,12 @@ function Footer() {
                 className="transition hover:text-blue-500"
               >
                 <FaInstagram className="w-10 h-10 text-xl sm:text-2xl" />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61572449970623"
+                className="transition hover:text-blue-500"
+              >
+                <FaFacebook className="w-10 h-10 text-xl sm:text-2xl" />
               </a>
               <a
                 href="https://www.linkedin.com/company/vizzle-official/"
