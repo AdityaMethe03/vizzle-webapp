@@ -8,7 +8,7 @@ function About() {
           Benefits of joining Vizzle!
         </p>
         <div className="flex flex-wrap items-center justify-evenly gap-8 my-10 ">
-          <div className="w-72 flex flex-col items-center justify-center px-4 py-8 gap-6 rounded-xl shadow-lg bg-white">
+          <div className="w-72 h-[350px] flex flex-col items-center justify-center px-4 py-8 gap-6 rounded-xl shadow-lg bg-white">
             <p className="text-lg font-semibold text-[#1D8DB2]">
               Try Before You Buy
               <span className="text-base"> - In Real Life</span>
@@ -22,7 +22,7 @@ function About() {
               Try on outfits in real-time with AR—shop confidently anywhere.
             </p>
           </div>
-          <div className="w-72 flex flex-col items-center justify-center px-4 py-8 gap-6 rounded-xl shadow-lg bg-white">
+          <div className="w-72 h-[350px] flex flex-col items-center justify-center px-4 py-8 gap-6 rounded-xl shadow-lg bg-white">
             <p className="text-lg font-semibold text-[#1D8DB2]">
               Shop Together, Smarter
             </p>
@@ -35,8 +35,8 @@ function About() {
               Shop together via video calls—compare, decide, and gift with AR.
             </p>
           </div>
-          <div className="w-72 flex flex-col items-center justify-center px-4 py-8 gap-6 rounded-xl shadow-lg bg-white">
-            <p className="text-base font-semibold text-[#1D8DB2]">
+          <div className="w-72 h-[350px] flex flex-col items-center justify-center px-4 py-8 gap-6 rounded-xl shadow-lg bg-white">
+            <p className="text-lg text-center font-semibold text-[#1D8DB2]">
               Smarter Shopping, Greener Planet
             </p>
             <img
