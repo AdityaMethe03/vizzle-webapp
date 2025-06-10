@@ -29,7 +29,7 @@ function Footer() {
                 <FaInstagram className="w-10 h-10 text-xl sm:text-2xl" />
               </a>
               <a
-                href="https://www.facebook.com/profile.php?id=61572449970623"
+                href="https://www.facebook.com/vizzle.in/"
                 className="transition hover:text-blue-500"
               >
                 <FaFacebook className="w-10 h-10 text-xl sm:text-2xl" />
@@ -40,7 +40,10 @@ function Footer() {
               >
                 <FaLinkedin className="w-10 h-10 text-xl sm:text-2xl" />
               </a>
-              <a href="" className="transition hover:text-blue-500">
+              <a
+                href="https://x.com/Vizzle_in"
+                className="transition hover:text-blue-500"
+              >
                 <FaXTwitter className="w-10 h-10 text-xl sm:text-2xl" />
               </a>
             </div>

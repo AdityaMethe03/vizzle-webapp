@@ -41,7 +41,7 @@ function WaitlistForm({ handleFormOpen }) {
         Join the Fashion <br /> <span className="font-bold">Revolution!</span>
       </h2>
       <p className="text-center text-base text-white mb-6">
-        Try AR outfits, shop smart, cut returns, go green with Vizzle.
+        Try AR outfits, shop smart & cut returns.
       </p>
 
       <form ref={formRef} onSubmit={sendEmail} className="space-y-1">
@@ -50,7 +50,7 @@ function WaitlistForm({ handleFormOpen }) {
           <input
             type="text"
             name="user_name"
-            placeholder="XYZ..."
+            placeholder="John Doe"
             required
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1D8DB2]"
           />
