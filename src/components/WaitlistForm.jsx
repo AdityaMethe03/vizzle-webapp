@@ -100,7 +100,7 @@ function WaitlistForm({ handleFormOpen }) {
         <div className="pt-6 flex justify-center">
           <button
             type="submit"
-            className="w-fit px-20 py-2 text-white text-base rounded-full bg-gradient-to-r from-[#1D8DB2] to-[#0C3C4C] transition-colors duration-300"
+            className="px-20 py-2 text-white text-base rounded-full bg-gradient-to-r from-[#1D8DB2] to-[#0C3C4C] transition-colors duration-300"
           >
             Submit
           </button>
