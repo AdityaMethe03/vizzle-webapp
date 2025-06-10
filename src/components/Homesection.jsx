@@ -51,7 +51,13 @@ function Homesection({ launchingRef, aboutRef, setIsFormOpen }) {
             >
               Join waitlist
             </button>
-            <button className="px-3 py-3 rounded-full shadow-lg border hover:shadow-md border-[#1D8DB2] text-[#1D8DB2] sm:px-4">
+            <button
+              onClick={() => {
+                scrollToSection(launchingRef, -50);
+                setIsFormOpen(true);
+              }}
+              className="px-3 py-3 rounded-full shadow-lg border hover:shadow-md border-[#1D8DB2] text-[#1D8DB2] sm:px-4"
+            >
               Download App
             </button>
           </div>

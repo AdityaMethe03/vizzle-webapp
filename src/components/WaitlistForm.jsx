@@ -19,7 +19,7 @@ function WaitlistForm({ handleFormOpen }) {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Email sent to user successfully!");
+          alert("Sent successfully!");
           handleFormOpen(false);
         },
         (error) => {
