@@ -26,7 +26,12 @@ function Homesection({ launchingRef, aboutRef, setIsFormOpen }) {
             >
               What's new?
             </button>
-            <button className="px-2 text-white">Check our deals →</button>
+            <button
+              onClick={() => scrollToSection(aboutRef, -100)}
+              className="px-2 text-white"
+            >
+              Check our deals →
+            </button>
           </div>
           <div className="my-4 mx-8 text-center sm:text-left sm:my-8 sm:mx-0">
             <h1 className="mt-0 mb-2 text-4xl font-baloo font-extrabold text-[#235D71] sm:text-5xl lg:text-7xl sm:mt-4">
