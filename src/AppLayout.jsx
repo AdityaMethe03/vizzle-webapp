@@ -13,7 +13,7 @@ function AppLayout() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar launchingRef={launchingRef} setIsFormOpen={setIsFormOpen} />
       <Homesection
         launchingRef={launchingRef}
         aboutRef={aboutRef}

@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
+
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
 
-function Navbar() {
+function Navbar({ launchingRef, setIsFormOpen }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -24,6 +26,14 @@ function Navbar() {
     };
   }, []);
 
+  const scrollToSection = (ref, offset = 0) => {
+    if (ref && ref.current) {
+      const top =
+        ref.current.getBoundingClientRect().top + window.pageYOffset + offset;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+  };
+
   return (
     // <header className="bg-[#F9F3FA] w-full fixed top-0 left-0 right-0 z-50 text-sm md:text-base lg:text-lg">
     <header className="backdrop-blur-lg w-[100%] fixed top-0 left-1/2 transform -translate-x-1/2 z-50 text-sm rounded-none bg-[#F9F3FA] md:text-base lg:text-lg sm:w-[95%] sm:rounded-3xl sm:top-2 sm:bg-[#F9F3FA]/80">
@@ -37,7 +47,13 @@ function Navbar() {
           />
         </Link>
         <div className="hidden sm:flex ">
-          <button className="px-5 py-4 rounded-full bg-[#1D8DB2] text-white text-sm shadow-md hover:shadow-inner md:px-7 md:py-5">
+          <button
+            onClick={() => {
+              scrollToSection(launchingRef, -50);
+              setIsFormOpen(true);
+            }}
+            className="px-5 py-4 rounded-full bg-[#1D8DB2] text-white text-sm shadow-md hover:shadow-inner md:px-7 md:py-5"
+          >
             Download Now
           </button>
         </div>
