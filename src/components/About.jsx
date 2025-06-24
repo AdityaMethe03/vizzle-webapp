@@ -13,7 +13,7 @@ function About() {
               Try Before You Buy In Real Life
             </p>
             <img
-              src="about3.png"
+              src="about1.png"
               alt="Benefits_of_Vizzle"
               className="w-1/2 rounded-full"
             />
@@ -27,7 +27,7 @@ function About() {
               Shop Together in Real Time with AR
             </p>
             <img
-              src="about3.png"
+              src="about2.png"
               alt="Benefits_of_Vizzle"
               className="w-1/2 rounded-full"
             />
